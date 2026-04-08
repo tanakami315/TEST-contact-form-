@@ -1,0 +1,50 @@
+.thanks {
+    position: relative;
+    height: 100vh;
+}
+
+.thanks__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 180px;
+    color:  #9C8C7C;
+    opacity: 0.1;
+    font-family: "Playfair Display", serif;
+    z-index: 0;
+    white-space: nowrap;
+}
+
+.thanks__content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.thanks__message {
+    margin-bottom: 20px;
+    color:  #82756a;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.thanks__button {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #82756a;
+    color: #fff;
+    font-family: "Playfair Display", serif;
+}
+
+@media screen and (max-width: 768px) {
+    .thanks__logo {
+        font-size: 80px;
+    }
+
+    .thanks__message {
+        font-size: 20px;
+    }
+}

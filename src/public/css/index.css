@@ -1,0 +1,221 @@
+.contact__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+    width: 100%;
+}
+
+.contact__heading {
+    margin-bottom: 40px;
+    text-align: center;
+    color: #927A63;
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.contact-form__group {
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-form__group form {
+    width: 100%;
+}
+
+.contact-form__item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.contact-form__label {
+    flex: 0 0 260px;
+    color:  #82756a;
+}
+
+.contact-form__set {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+}
+
+.contact-form__content {
+    flex: 1;
+    align-items: center;
+}
+
+.contact-form__content--gender {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-form__content--tel {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.contact-form__label-text {
+    font-size: 18px;
+}
+
+.contact-form__required {
+    margin-left: 10px;
+    color: #ff0000;
+}
+
+.contact-form__input {
+    color: #82756a;
+    margin: 0px auto;
+}
+
+.contact-form__hyphen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #82756a;
+}
+
+.contact-form__input--middle {
+    width: 60%;
+}
+
+.contact-form__input--long {
+    width: 100%;
+}
+
+.contact-form__input--short {
+    width: 40%;
+}
+
+.contact-form__input--radio {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #82756a;
+    border-radius: 50%;
+    vertical-align: -2px;
+    -webkit-appearance: none;
+        -moz-appearance: none;
+            appearance: none;
+}
+
+.contact-form__input--radio:checked {
+    background:#82756a;
+}
+
+.contact-form__input--textarea {
+    width: 100%;
+    height:200px;
+}
+
+.contact-form__input--middle,
+.contact-form__input--short,
+.contact-form__input--long,
+.contact-form__input--textarea,
+select.contact-form__input--middle {
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    word-break: break-word;
+    text-align: left;
+    color: #82756a;
+    background-color: #f1f0f0;
+}
+
+.contact-form__input--middle,
+.contact-form__input--long,
+.contact-form__input--textarea,
+select.contact-form__input--middle {
+    text-align: left;
+}
+
+.contact-form__input--short {
+    text-align: center;
+}
+
+.contact-form__radio-choice {
+    margin-right: 30px;
+}
+
+input:-webkit-autofill,
+select:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px #f1f0f0 inset;
+    -webkit-text-fill-color:  #82756a;
+}
+
+.contact-form__error {
+    color:#ff0000;
+}
+
+.contact-form__button {
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+.contact-form__button-submit {
+    padding: 10px 30px;
+    background-color: #82756a;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact-form__input--middle::placeholder,
+.contact-form__input--short::placeholder,
+.contact-form__input--long::placeholder,
+.contact-form__input--textarea::placeholder {
+    color:  #82756a;
+    opacity: 0.5;
+}
+
+select {
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url("/img/select.png");
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    background-position: right 12px center;
+    padding-right: 40px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .contact-form__item {
+        display: block;
+    }
+
+    .contact-form__label {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .contact-form__set {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-form__input--middle,
+    .contact-form__input--short,
+    .contact-form__input--long,
+    .contact-form__input--textarea,
+    select.contact-form__input--middle {
+        width: 100%;
+    }
+
+    .contact-form__content {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .contact-form__button-submit {
+        width: 100%;
+    }
+}

@@ -1,0 +1,29 @@
+.logout {
+    position: relative;
+    height: 80vh;
+}
+
+
+.logout__content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logout__message {
+    margin-bottom: 20px;
+    color:  #82756a;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.login__button {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #82756a;
+    color: #fff;
+    font-family: "Playfair Display", serif;
+    text-decoration: none;
+}

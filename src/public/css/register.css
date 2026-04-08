@@ -1,0 +1,120 @@
+body {
+    background-color: #f1ece7;
+}
+
+.header {
+    background-color: #fff;
+}
+
+.register-form__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.register-form__heading {
+    margin-bottom: 40px;
+    text-align: center;
+    color:  #82756a;
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.register-form__group {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #e0d9d1;
+    border-radius: 6px;
+    padding: 50px 100px;
+    box-sizing: border-box;
+}
+
+.register-form__item {
+    margin-bottom: 20px;
+}
+
+.register-form__label {
+    display: block;
+    font-size: 20px;
+    color:  #82756a;
+}
+
+.register-form__input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    word-break: break-word;
+    text-align: left;
+    color: #82756a;
+    background-color: #f1f0f0;
+}
+
+.register-form__button {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.register-form__button-submit {
+    padding: 10px 30px;
+    cursor: pointer;
+    background:  #82756a;
+    color: #fff;
+}
+
+.register-form__error {
+    display: flex;
+    gap:170px;
+    color:#ff0000;
+}
+
+.login__link {
+    position: absolute;
+    left: 100%;
+    transform: translateX(-100%);
+    right: 0px;
+    padding: 3px;
+    width: 70px;
+    height: 30px;
+    border: 1px solid  #82756a;
+    border-radius: 1px;
+    cursor: pointer;
+    background: #f1f0f0;
+    color: #82756a;
+    display: block;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-family: "Playfair Display", serif;
+}
+
+input:-webkit-autofill,
+select:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px #f1f0f0 inset;
+    -webkit-text-fill-color:  #82756a;
+}
+
+.register-form__input::placeholder {
+    color:  #82756a;
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+    .register-form__content {
+        padding: 20px 10px;
+    }
+
+    .register-form__group {
+        padding: 30px 20px;
+    }
+
+    .login__link {
+        position: static;
+        transform: none;
+        margin: 0;
+    }
+}
