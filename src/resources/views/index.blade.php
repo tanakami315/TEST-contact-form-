@@ -11,7 +11,7 @@
     </div>
 
     <div class="contact-form__group">
-        <form action="/confirm" method="post">
+        <form action="/confirm" method="post" novalidate>
             @csrf
             <div class="contact-form__item">
                 <div class="contact-form__label">

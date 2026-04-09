@@ -17,7 +17,7 @@
 	</div>
 	
 	<div class="login-form__group">
-		<form class="login-form" action="/login" method="post">
+		<form class="login-form" action="/login" method="post" novalidate>
 			@csrf
 			<div class="login-form__item">
 				<div class="login-form__label">メールアドレス</div>

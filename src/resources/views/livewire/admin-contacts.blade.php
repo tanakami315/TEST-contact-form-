@@ -53,9 +53,12 @@
 
     <div class="function">
         <form class="export" action="/export" method="get">
-                <input type="hidden" name="category_id" value="{{ request('category_id') }}">
+                <!-- <input type="hidden" name="category_id" value="{{ request('category_id') }}">
                 <input type="hidden" name="keyword" value="{{ request('keyword') }}">
-                <input type="hidden" name="gender" value="{{ request('gender') }}">
+                <input type="hidden" name="gender" value="{{ request('gender') }}"> -->
+                <input type="hidden" name="category_id" value="{{ $category_id }}">
+                <input type="hidden" name="keyword" value="{{ $keyword }}">
+                <input type="hidden" name="gender" value="{{ $gender }}">
                 <button type="submit">エクスポート</button>
         </form>
 
